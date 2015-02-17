@@ -2,7 +2,8 @@ Let's say Jan has an idea improve the Dart language. Here's how she goes about i
 
 Here's the short version:
 
-1. Jan starts an informal discussion on the **TODO: name** mailing list.
+1. Jan starts an informal discussion on the [`core-dev@dartlang.org`][core-dev]
+   mailing list.
 2. She creates a new repo for her DEP containing the proposal, tests,
    prototype, examples, docs, etc.
 3. When she's ready for us to see it, she [files an issue][issue] pointing to a
@@ -23,6 +24,7 @@ Here's the short version:
 11. At this point, the team can start implementing it (under a flag) and we can
     pass it on to TC 52.
 
+[core-dev]: https://groups.google.com/a/dartlang.org/forum/#!forum/core-dev
 [issue]: https://github.com/dart-lang/dart_enhancement_proposals/issues
 [accepted]: https://github.com/dart-lang/dart_enhancement_proposals/tree/master/accepted
 
@@ -30,11 +32,14 @@ Here's the longer story:
 
 ## Conception
 
-Jan keeps running into some problem in her Dart code and eventually has an idea
-for a solution. The first thing she does is send an email to **TODO: list**.
+Jan keeps running into some problem in her Dart code. She asks around on the
+[main mailing list][misc] and [StackOverflow][] but no one seems to have a good
+solution or workaround. Eventually, she has an idea for a solution that
+requires a change to Dart itself. The next thing she does is send an email to
+[`core-dev@dartlang.org`][core-dev].
 
-*(I think we should make a new list for this to lower traffic. Something like
-lang@dartlang.org or dep@dartlang.org.)*
+[misc]: https://groups.google.com/a/dartlang.org/forum/#!forum/misc
+[stackoverflow]: http://stackoverflow.com/tags/dart
 
 She discusses it with the folks there—people both on the Dart team and off.
 Many ideas will die here, which is good. Lots of problems already have good
@@ -57,6 +62,12 @@ are helpful. This repo is basically a little product in itself. She can
 collaborate with other people, talk about it, take pull requests and issues,
 whatever she wants. It's a living, breathing Git repo.
 
+It probably *won't* have actual proposed spec language changes, at least not
+initially. The set of people who can write that kind of stuff correctly is very
+small. Fortunately, we have a few on staff, so as Jan's proposal reaches
+maturity, we can help fill this in. Of course, she's welcome to work on it too.
+It's her proposal, after all.
+
 When she decides the proposal document and other artifacts (mainly the tests
 and prototype) are ready for the committee to see, she **gets our attention by
 filing an [issue][]** on the [dart_enhancement_proposals repo][dep repo].
@@ -72,7 +83,10 @@ We'll provide a template for that issue that's basically:
     Please look at commit <commit hash>.
 
 We call this the **tracking issue.** It stays open as long as her DEP is
-in-progress and its label defines the current status of the DEP.
+in-progress. It's the canonical identifier for her DEP. Its [label][] defines
+the current status of the DEP.
+
+[label]: https://github.com/dart-lang/dart_enhancement_proposals/labels
 
 ## Admission
 
@@ -127,6 +141,11 @@ along to TC 52. At that point we:
   [dart_enhancement_proposals][dep repo] under
   [`accepted/<number>/...`][accepted].
 
-*TODO: Maybe we just need the proposal doc and spec changes?*
+Now, the proposal has exited the DEP process and moves into the more official
+Ecma standardization process. If we've done our job well, the proposal will
+satisfy the committee and will get ratified pretty much as-is.
 
-And we're done!
+However, the TC 52 committee always has final say over what makes it into the
+standard and there is a chance the proposal will be modified or possibly even
+rejected. Our goal with the DEP process is to make sure the proposals we
+deliver are so great that they slide right in and everyone is happy.
