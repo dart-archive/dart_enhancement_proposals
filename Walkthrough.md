@@ -1,8 +1,8 @@
-Let's say Jan has an idea improve the Dart language. Here's how she goes about it. From here on out, "she" refers to Jan, and "we" refers to the DEP committee.
+Let's say Kate has an idea improve the Dart language. Here's how she goes about it. From here on out, "she" refers to Kate, and "we" refers to the DEP committee.
 
 Here's the short version:
 
-1. Jan starts an informal discussion on the [`core-dev@dartlang.org`][core-dev]
+1. Kate starts an informal discussion on the [`core-dev@dartlang.org`][core-dev]
    mailing list.
 2. She creates a new repo for her DEP containing the proposal, tests,
    prototype, examples, docs, etc.
@@ -32,7 +32,7 @@ Here's the longer story:
 
 ## Conception
 
-Jan keeps running into some problem in her Dart code. She asks around on the
+Kate keeps running into some problem in her Dart code. She asks around on the
 [main mailing list][misc] and [StackOverflow][] but no one seems to have a good
 solution or workaround. Eventually, she has an idea for a solution that
 requires a change to Dart itself. The next thing she does is send an email to
@@ -52,7 +52,7 @@ She **creates a new Git repo**, likely on GitHub, but all that matters is that
 it's somewhere public. That repo has a structure something much like:
 
     proposal.md  # DEP doc, based on template.
-    spec.tex     # Language spec changes.
+    spec.tex     # Language spec changes, if any.
     test/        # Language tests.
     prototype/   # Implementation.
     example/     # Examples of using the proposal.
@@ -64,7 +64,7 @@ whatever she wants. It's a living, breathing Git repo.
 
 It probably *won't* have actual proposed spec language changes, at least not
 initially. The set of people who can write that kind of stuff correctly is very
-small. Fortunately, we have a few on staff, so as Jan's proposal reaches
+small. Fortunately, we have a few on staff, so as Kate's proposal reaches
 maturity, we can help fill this in. Of course, she's welcome to work on it too.
 It's her proposal, after all.
 
@@ -116,7 +116,7 @@ etc.
 
 We can contribute in other ways too. We may send her pull requests if we want
 to actively chip in. Meanwhile, she controls what actually lands so she doesn't
-have to worry about us highjacking her proposal.
+have to worry about us hijacking her proposal.
 
 Other people can send her patches and pull requests. She can make commits to
 her repo use branches, whatever she wants while she's revising things. This is
@@ -133,7 +133,7 @@ We go through the review cycle again.
 
 Eventually, if things go well, we get to a point where we don't have any more
 feedback to give. We have a commit that points to a version of the proposal,
-spec changes, tests, and protoype implementation that we are happy to pass
+spec changes, tests, and prototype implementation that we are happy to pass
 along to TC 52. At that point we:
 
 * Label the tracking bug "accepted" and close it.
