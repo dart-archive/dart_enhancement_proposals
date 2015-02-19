@@ -1,9 +1,11 @@
-Attendees: [Anders][], [Bob][], [Erik][], [Gilad][], Lars, Lasse.
+Attendees: [Anders][], [Bob][], [Erik][], [Gilad][], [Lars][], [Lasse][].
 
 [anders]: https://github.com/anders-sandholm
 [bob]: https://github.com/munificent
 [erik]: https://github.com/ErikErnst
 [gilad]: https://github.com/gbracha
+[lars]: https://github.com/larsbak
+[lasse]: https://github.com/lrhn
 
 ## When should the committee meet?
 
