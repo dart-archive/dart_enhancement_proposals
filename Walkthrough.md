@@ -4,8 +4,8 @@ Here's the short version:
 
 1. Kate starts an informal discussion on the [`core-dev@dartlang.org`][core-dev]
    mailing list.
-2. She creates a new repo for her DEP containing the proposal, tests,
-   prototype, examples, docs, etc.
+2. She creates a new repo for her DEP containing the proposal (based on our
+   [template][]), tests, prototype, examples, docs, etc.
 3. When she's ready for us to see it, she [files an issue][issue] pointing to a
    commit in her repo, asking us to take a look.
 4. We take that issue and label it "awaiting review".
@@ -25,6 +25,7 @@ Here's the short version:
     pass it on to TC 52.
 
 [core-dev]: https://groups.google.com/a/dartlang.org/forum/#!forum/core-dev
+[template]: https://github.com/dart-lang/dart_enhancement_proposals/blob/master/DEP%20Template.md
 [issue]: https://github.com/dart-lang/dart_enhancement_proposals/issues
 [accepted]: https://github.com/dart-lang/dart_enhancement_proposals/tree/master/accepted
 
@@ -51,18 +52,24 @@ idea has merit and is worth pursuing, she goes to the next step:
 She **creates a new Git repo**, likely on GitHub, but all that matters is that
 it's somewhere public. That repo has a structure something much like:
 
-    proposal.md  # DEP doc, based on template.
+    proposal.md  # DEP doc.
     spec.tex     # Language spec changes, if any.
     test/        # Language tests.
     prototype/   # Implementation.
     example/     # Examples of using the proposal.
 
-There may be other stuff in there too. Whatever supporting artifacts she thinks
-are helpful. This repo is basically a little product in itself. She can
-collaborate with other people, talk about it, take pull requests and issues,
-whatever she wants. It's a living, breathing Git repo.
+The proposal itself is a [Markdown][] document that she creates by copying
+[our template][template] and filling it in.
 
-It probably *won't* have actual proposed spec language changes, at least not
+[markdown]: http://en.wikipedia.org/wiki/Markdown
+
+In addition to the above, there may be other stuff in the repo too. Whatever
+supporting artifacts she thinks are helpful. The repo is basically a little
+product in itself. She can collaborate with other people, talk about it, take
+pull requests and issues, whatever she wants. It's a living, breathing
+workspace.
+
+She probably *won't* have actual proposed spec language changes, at least not
 initially. The set of people who can write that kind of stuff correctly is very
 small. Fortunately, we have a few on staff, so as Kate's proposal reaches
 maturity, we can help fill this in. Of course, she's welcome to work on it too.
