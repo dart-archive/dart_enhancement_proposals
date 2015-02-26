@@ -93,7 +93,7 @@ standards process.
 
 Sometimes, a flowchart really is the right answer:
 
-![](https://github.com/dart-lang/dart_enhancement_proposals/blob/master/Flowchart.svg)
+![](https://dart-lang.github.io/dart_enhancement_proposals/Flowchart.svg)
 
 Blue boxes are controlled by the author, and green boxes are handled by the DEP
 committee. Rectangles are states a proposal can be in, and rounded boxes are
