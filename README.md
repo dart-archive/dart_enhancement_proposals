@@ -1,57 +1,171 @@
-# Why a “Dart Enhancement Proposal” process?
+This repository maintains and tracks **Dart Enhancement Proposals**. These
+guide the evolution of the [Dart][] programming language. It's similar to
+[Python's PEPs][pep] process and [Scala's SIPs][sip].
 
-We want to create a more open, collaborative, and inclusive Dart ecosystem.
-We want Dart to be responsive to developer requirements.
-We want to encourage the community to feel a shared sense of ownership and stewardship.
-We want to be more transparent about the work leading up to Dart language changes. I.e., we want to
+[dart]: https://www.dartlang.org/
+[pep]: https://www.python.org/dev/peps/
+[sip]: http://docs.scala-lang.org/sips/
 
-1. ensure rationale behind changes (or decisions not to change) is clearly communicated to the Dart community.
-2. "close the loop" and ensure that stakeholders are satisfied with a solution before it gets locked down.
-3. lean some of the burden of due diligence on the proposer to make effective use of the language team's time.
+We use the issue tracker in this repo to track ongoing proposals:
 
-We want to be clear about how developers can make a proposal for a language change.
+* [In-progress DEPs][open]
+* [Accepted DEPs][accepted]
+* [DEPs awaiting author's revision][revise]
+* [DEPs awaiting committee feedback][review]
 
-TC52 always has the final say in whether a proposal gets accepted or rejected. The DEP committee is approved and tasked by TC52 to manage the inflow of proposals for discussion. Moreover, TC52 members can always bring proposals in as they please because that is inherent in the standards process.
+[open]: https://github.com/dart-lang/dart_enhancement_proposals/issues
+[accepted]: https://github.com/dart-lang/dart_enhancement_proposals/labels/accepted
+[revise]: https://github.com/dart-lang/dart_enhancement_proposals/labels/awaiting%20revision
+[review]: https://github.com/dart-lang/dart_enhancement_proposals/labels/awaiting%20review
 
-# Dart Enhancement Proposal Flow
+## What is a DEP?
 
-![DEP Flow](https://drive.google.com/file/d/0B9dMunGq8GTZUW1KdTJocUM0a0U/view?usp=sharing)
+A DEP is a [detailed, concrete proposal][template] to change part of the core
+Dart platform. "Platform" usually means the Dart language itself, but DEPs may
+also apply to core libraries or other tools that ship with the Dart SDK.
 
-Blue boxes are controlled by the author, and green boxes are controlled by the DEP committee. Dark boxes are states a proposal can be in and light rounded boxes are actions the people can take.
+[template]: https://github.com/dart-lang/dart_enhancement_proposals/blob/master/DEP%20Template.md
 
-- An idea for improving Dart begins as a rough **concept**. Authors are strongly encouraged to share their idea with the ecosystem before filling out the full DEP template. This ensures they don’t waste time on ideas that have already been considered before or are infeasible or unlikely to succeed.
-- If the ecosystem likes the concept, the author **writes a DEP document**. The proposal is now a **draft**.
-- Once the community is happy with the DEP document, the author can **propose to committee** that the DEP is considered. This is done by filing an issue on dartbug.com using the “Dart Enhancement Proposal” template.
-- The DEP committee convenes and reviews any proposed drafts. For each DEP, they will either **dismiss** it, **give feedback**, or **promote** it.
-- If the committee finds that the proposed DEP isn’t likely to ever become relevant, it may be **dismissed**. This is to weed out spurious or ill-conceived ideas, or problems that already have a good solution.
-- If the committee thinks the idea has merit, but the draft isn’t ready for TC 52 they will **give feedback** to the author. This bounces it back to the **draft** state until the author makes changes.
-- The author makes any relevant changes or additions and then **proposes it again** for another round of review but updating the issue. Multiple cycles of this may occur, though everyone naturally wants to minimize this. The committee will then review it again at the next meeting.
-- If the committee is in favor of the DEP becoming an actual change to the language, they will **promote** it. This doesn’t carve it in stone. The proposal then goes to ECMA TC 52 and the expectation here is that the proposal is likely to move forward.
-- At any point in time, the author may **abandon** their proposal and not proceed with the DEP. This may because they found a better way to solve their problem, or another DEP superseded it or the author simply doesn’t have the time to work on it or find someone else to take the helm.
+DEPs are the primary way that the Dart team and the larger Dart community work
+together to improve Dart over time. A DEP is a *technical* artifact in that it
+specifies *what* the proposed change is and *how* it can be implemented or
+specified. By the time a DEP reaches maturity, it will usually contain tests, a
+prototype implementation and spec language changes.
 
-# DEP committee review meetings
+At the same time, a DEP is *social* artifact. It's a living repository that
+lets interested parties work together and build consensus on *why* the language
+should be changed in a certain way. It contains rationale and alternate
+approaches that were considered. Iterating on the DEP in public ensures people
+with good ideas can participate.
 
-Periodically, the DEP committee meets to determine the disposition of active DEPs.
+## What is this process for?
 
-For each active DEP, the outcome is either
-- Feedback to revise
-- Promote to recommend TC52 to look at it
-- Dismiss
+Language design is hard. Designing a syntax and semantics that is elegant,
+expressive, and can be implemented efficiently requires deep understanding of
+parsers, compilers, and virtual machines.
 
-A DEP is active iff it is either newly submitted or awaits more work as a result of feedback to revise. It’s the committee’s job to explain what further work is needed—owner may be asked to participate in the meeting.
+Meanwhile, Dart users are writing sophisticated applications and frameworks
+with complex needs that require deep domain knowledge to understand.
 
-The review meetings are held approximately every 2-4 weeks - depending on demand. Schedule is expected (TODO:Link to schedule). We will publish minutes and decision summaries from each meeting.
+To make a great language that can be used to write great programs means these
+people need to work together. The DEP process is how we do that. We want to:
 
-Current members of the DEP committee are: Lars Bak, Kasper Lund, Gilad Bracha, Bob Nystrom, Lasse Reichstein Nielsen, and Anders Thorhauge Sandholm. We may also decide to include additional non-Google employee members.
+* Create an open, collaborative, and inclusive Dart ecosystem.
+* Be responsive to developer requirements.
+* Give the community a sense of shared ownership and stewardship.
+* Be transparent about the work leading to Dart language changes.
+* Ensure rationale for changes (or decisions not to change) is clearly
+  communicated.
+* Close the loop and ensure stakeholders are happy before a change is
+  finalized.
 
-# How do I submit a proposal?
+This all sounds great for the community, which is of course what matters most.
+But the language team's resources are finite and this involves more work
+documenting and carefully following processes.
 
-- Check on the mailing list, issue tracker, etc. to see if someone already made the proposal, if there is interest.
-- Develop your proposal and start work on a DEP document and potentially a prototype implementation
-- Once you’ve floated the idea informally with the community, e.g., mailing list, Dartisans on G+ and you’re happy with the proposal, you’re ready to formally submit the proposal. prototype and clear about the semantics of the new feature, start filling out the DEP template.
-- Submit proposal
-  - Make a copy of “DEP for <new feature> template” (essentially a markdown file with the below template).
-  - Fill in the doc with contents
-  - File an issue on the DEP github repo
-    - Fill in the link to your DEP doc (this should be changed into a PR taking a markdown file???)
-    - Fill in the link to the repo with the implementation if you have one already.
+The other side of that coin is that the DEP process places some of the burden
+of due diligence on the proposer. It's up to the DEP author to clarify
+rationale, build consensus, and work through the technical challenges of the
+proposal. This helps us make effective use of the language team's time.
+
+## So anyone can change Dart?
+
+Anyone can create and champion a DEP, but this does not mean that Dart is a
+democracy. The DEP process is a key part of how we decide how Dart should grow,
+but it's only one part. DEPs are managed by the *DEP committee*.
+
+This is a handful of Dart team members who handle the adminstrivia of tracking
+proposals through the process. They also ultimately decide which proposals get
+accepted and which do not. Keeping this in the hands of a small group ensures
+Dart stays compact and consistent.
+
+Also, because Dart is an open [Ecma specification][spec], the [TC52
+committee][tc52] has final say on what changes land in the spec. The DEP
+committee *is* approved and tasked by TC52 to manage the inflow of proposals
+for discussion. However, TC52 members can always bring proposals in directly or
+change them after they have been accepted. This is inherent in the Ecma
+standards process.
+
+[spec]: https://www.dartlang.org/docs/spec/
+[tc52]: http://www.ecma-international.org/memento/TC52.htm
+
+## How do I create a proposal?
+
+Sometimes, a flowchart really is the right answer:
+
+![](https://github.com/dart-lang/dart_enhancement_proposals/blob/master/Flowchart.svg)
+
+Blue boxes are controlled by the author, and green boxes are handled by the DEP
+committee. Rectangles are states a proposal can be in, and rounded boxes are
+actions people can take.
+
+The workflow goes something like this:
+
+1. It starts with you having an idea. You discuss it informally with the
+   community. At this point, it's just a **concept**. You and whoever else is
+   interested iterate on it like this for a while.
+
+2. If the concept comes together and seems like a workable idea, you write up a
+   proposal. You **file the DEP** to bring it to the committee's attention.
+   Your proposal is now a live DEP **awaiting review** from the committee.
+
+3. The committee meets and goes over your proposal in detail. We do one of:
+
+    1. We **give feedback**. This means the DEP has merit but needs more
+       work. Now the ball is back in your court and the DEP is **awaiting
+       revision** from you.
+
+    2. We **accept** it. We think the DEP is in great shape, and would be
+       an improvement to the platform. We hand it off to the TC52 committee to
+       take it from there. Your proposal has exited the DEP process and it's up
+       to TC52 to handle it.
+
+    3. We **decline** it. This means we don't think the proposal is likely
+       to become something that will move the platform forward. This sounds
+       bad, but declining changes is often good because it helps keep the
+       platform small and focused.
+
+4. If we gave you feedback, it's now up to you to **revise** your proposal.
+   This is a good time to take feedback from the rest of the community to. Once
+   you're satisfied, you send it back to us for another round of review.
+   Multiple cycles of this may occur, though everyone naturally wants to
+   minimize it.
+
+There's also the possibility that you'll abandon your proposal. This may
+because you found a better way to solve your problem, or another DEP superseded
+it or you simply doesn’t have the time to work on it or find someone else to
+take the helm.
+
+The actual mechanics of this process rely heavily on Git and GitHub. Your DEP
+will be a repo, its status is tracked with an issue here. To see how all of
+that plays out, read the [walkthrough][].
+
+[walkthrough]: https://github.com/dart-lang/dart_enhancement_proposals/blob/master/Walkthrough.md
+
+# How does the committee work?
+
+We meet weekly to run through the all of the DEPs awaiting our feedback. We
+publish minutes from these meetings [here in the repo][minutes]. It's our job
+to explain what further work we think a DEP needs if it isn't ready to be
+accepted. The author of a DEP may be asked to join in the meeting.
+
+[minutes]: https://github.com/dart-lang/dart_enhancement_proposals/tree/master/Meetings
+
+Currently, the DEP committee is:
+
+* [Anders Thorhauge Sandholm][anders]
+* [Bob Nystrom][bob]
+* [Erik Ernst][erik]
+* [Gilad Bracha][gilad]
+* [Ivan Posva][ivan]
+* [Kasper Lund][kasper]
+* [Lars Bak][lars]
+* [Lasse Reichstein Nielsen][lasse]
+
+[anders]: https://github.com/anders-sandholm
+[bob]: https://github.com/munificent
+[erik]: https://github.com/ErikErnst
+[gilad]: https://github.com/gbracha
+[ivan]: https://github.com/iposva
+[lars]: https://github.com/larsbak
+[lasse]: https://github.com/lrhn

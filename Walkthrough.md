@@ -1,6 +1,6 @@
 Let's say Kate has an idea improve the Dart language. Here's how she goes about it. From here on out, "she" refers to Kate, and "we" refers to the DEP committee.
 
-Here's the short version:
+Here's the short version of the steps she takes:
 
 1. Kate starts an informal discussion on the [`core-dev@dartlang.org`][core-dev]
    mailing list.
@@ -18,16 +18,17 @@ Here's the short version:
 8. We set it back to "awaiting review" and go to step 5.
 9. If she bails or we think it can't move forward, we may explain why, and
    close the issue.
-10. If we're happy with it, we create a new file under [`accepted/`][accepted]
+10. If we're happy with it, we create a new file under [`Accepted/`][accepted]
     in our repo with the full text of her proposal. We close the bug as
-    "approved".
+    ["accepted"][accepted issues].
 11. At this point, the team can start implementing it (under a flag) and we can
     pass it on to TC 52.
 
 [core-dev]: https://groups.google.com/a/dartlang.org/forum/#!forum/core-dev
 [template]: https://github.com/dart-lang/dart_enhancement_proposals/blob/master/DEP%20Template.md
 [issue]: https://github.com/dart-lang/dart_enhancement_proposals/issues
-[accepted]: https://github.com/dart-lang/dart_enhancement_proposals/tree/master/accepted
+[accepted]: https://github.com/dart-lang/dart_enhancement_proposals/tree/master/Accepted
+[accepted issues]: https://github.com/dart-lang/dart_enhancement_proposals/labels/accepted
 
 Here's the longer story:
 
@@ -146,7 +147,7 @@ along to TC 52. At that point we:
 * Label the tracking bug "accepted" and close it.
 * Copy the contents of her repo at the commit we accepted into
   [dart_enhancement_proposals][dep repo] under
-  [`accepted/<number>/...`][accepted].
+  [`Accepted/<number>/...`][accepted].
 
 Now, the proposal has exited the DEP process and moves into the more official
 Ecma standardization process. If we've done our job well, the proposal will
