@@ -169,3 +169,4 @@ Currently, the DEP committee is:
 [ivan]: https://github.com/iposva
 [lars]: https://github.com/larsbak
 [lasse]: https://github.com/lrhn
+[kasper]: https://github.com/kasperl
