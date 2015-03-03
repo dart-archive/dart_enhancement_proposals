@@ -14,7 +14,7 @@ We use the issue tracker in this repo to track ongoing proposals:
 * [DEPs awaiting committee feedback][review]
 
 [open]: https://github.com/dart-lang/dart_enhancement_proposals/issues
-[accepted]: https://github.com/dart-lang/dart_enhancement_proposals/labels/accepted
+[accepted]: https://github.com/dart-lang/dart_enhancement_proposals/issues?q=label%3Aaccepted+
 [revise]: https://github.com/dart-lang/dart_enhancement_proposals/labels/awaiting%20revision
 [review]: https://github.com/dart-lang/dart_enhancement_proposals/labels/awaiting%20review
 

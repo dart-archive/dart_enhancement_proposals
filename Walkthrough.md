@@ -18,9 +18,9 @@ Here's the short version of the steps she takes:
 8. We set it back to "awaiting review" and go to step 5.
 9. If she bails or we think it can't move forward, we may explain why, and
    close the issue.
-10. If we're happy with it, we create a new file under [`Accepted/`][accepted]
-    in our repo with the full text of her proposal. We close the bug as
-    ["accepted"][accepted issues].
+10. If we're happy with it, we create a new directory under
+    [`Accepted/`][accepted] in our repo with the full text of her proposal. We
+    close the bug as ["accepted"][accepted issues].
 11. At this point, the team can start implementing it (under a flag) and we can
     pass it on to TC 52.
 
@@ -28,7 +28,7 @@ Here's the short version of the steps she takes:
 [template]: https://github.com/dart-lang/dart_enhancement_proposals/blob/master/DEP%20Template.md
 [issue]: https://github.com/dart-lang/dart_enhancement_proposals/issues
 [accepted]: https://github.com/dart-lang/dart_enhancement_proposals/tree/master/Accepted
-[accepted issues]: https://github.com/dart-lang/dart_enhancement_proposals/labels/accepted
+[accepted issues]: https://github.com/dart-lang/dart_enhancement_proposals/issues?q=label%3Aaccepted+
 
 Here's the longer story:
 
