@@ -79,15 +79,15 @@ proposals through the process. They also ultimately decide which proposals get
 accepted and which do not. Keeping this in the hands of a small group ensures
 Dart stays compact and consistent.
 
-Also, because Dart is an open [Ecma specification][spec], the [TC52
-committee][tc52] has final say on what changes land in the spec. The DEP
+Also, because Dart is an open [Ecma specification][spec], [TC52][] has 
+final say on what changes land in the spec. The DEP
 committee *is* approved and tasked by TC52 to manage the inflow of proposals
 for discussion. However, TC52 members can always bring proposals in directly or
 change them after they have been accepted. This is inherent in the Ecma
 standards process.
 
 [spec]: https://www.dartlang.org/docs/spec/
-[tc52]: http://www.ecma-international.org/memento/TC52.htm
+[TC52]: http://www.ecma-international.org/memento/TC52.htm
 
 ## How do I create a proposal?
 
@@ -116,9 +116,10 @@ The workflow goes something like this:
        revision** from you.
 
     2. We **accept** it. We think the DEP is in great shape, and would be
-       an improvement to the platform. We hand it off to the TC52 committee to
-       take it from there. Your proposal has exited the DEP process and it's up
-       to TC52 to handle it.
+       an improvement to the platform. Once you have submitted Ecma TC52's 
+       [external contributer form][], we hand the DEP off to TC52 to 
+       take it from there. Your proposal has exited the DEP process and it's 
+       now up to TC52 to handle it. 
 
     3. We **decline** it. This means we don't think the proposal is likely
        to become something that will move the platform forward. This sounds
@@ -130,6 +131,8 @@ The workflow goes something like this:
    you're satisfied, you send it back to us for another round of review.
    Multiple cycles of this may occur, though everyone naturally wants to
    minimize it.
+
+[external contributer form]: http://www.ecma-international.org/memento/TC52%20policy/Contribution%20form%20to%20TC52%20Royalty%20Free%20Task%20Group%20as%20a%20non-member.pdf
 
 There's also the possibility that you'll abandon your proposal. This may
 because you found a better way to solve your problem, or another DEP superseded
