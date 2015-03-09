@@ -19,8 +19,8 @@ with simple, completely local transformations to existing Dart semantics.
 
 [null]: https://github.com/gbracha/nullAwareOperators
 
-This is one of our oldest (#41!) and most highly-starred (103!) [bugs][null
-bug], so we think people will like it.
+This is one of our oldest (#41!) and most highly-starred (103!)
+[bugs][null bug], so we think people will like it.
 
 [null bug]: https://code.google.com/p/dart/issues/detail?id=41
 
