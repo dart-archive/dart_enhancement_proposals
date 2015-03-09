@@ -4,7 +4,7 @@ Attendees: [Anders][], [Bob][], [Gilad][], [Ivan][], [Kasper][], [Lars][], [Lass
 [bob]: https://github.com/munificent
 [erik]: https://github.com/eernstg
 [gilad]: https://github.com/gbracha
-[ivan]: https://github.com/iposva
+[ivan]: https://github.com/iposva-google
 [kasper]: https://github.com/kasperl
 [lars]: https://github.com/larsbak
 [lasse]: https://github.com/lrhn
