@@ -115,4 +115,4 @@ the committee meeting yet. We'll keep working on that outside of the meeting
 for now.
 
 [generic methods proposal]: https://github.com/dart-lang/dart_enhancement_proposals/issues/22
-* [configuration](https://github.com/dart-lang/dart_enhancement_proposals/issues/6)
+[configuration]: https://github.com/dart-lang/dart_enhancement_proposals/issues/6
