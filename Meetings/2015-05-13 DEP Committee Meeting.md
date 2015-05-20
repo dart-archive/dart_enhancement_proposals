@@ -4,7 +4,7 @@ Attendees: [Bob][], [Gilad][], [Kasper][].
 [gilad]: https://github.com/gbracha
 [kasper]: https://github.com/kasperl
 
-## [#5 Package spec]
+## [#5 Package spec][package spec]
 
 [package spec]: https://github.com/dart-lang/dart_enhancement_proposals/issues/5
 
