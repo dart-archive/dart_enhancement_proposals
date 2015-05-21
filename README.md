@@ -79,7 +79,7 @@ proposals through the process. They also ultimately decide which proposals get
 accepted and which do not. Keeping this in the hands of a small group ensures
 Dart stays compact and consistent.
 
-Also, because Dart is an open [Ecma specification][spec], [TC52][] has 
+Also, because Dart is an open [Ecma specification][spec], [TC52][] has
 final say on what changes land in the spec. The DEP
 committee *is* approved and tasked by TC52 to manage the inflow of proposals
 for discussion. However, TC52 members can always bring proposals in directly or
@@ -102,8 +102,9 @@ actions people can take.
 The workflow goes something like this:
 
 1. It starts with you having an idea. You discuss it informally with the
-   community. At this point, it's just a **concept**. You and whoever else is
-   interested iterate on it like this for a while.
+   community, usually on the [`core-dev@dartlang.org`][core-dev] list. At this
+   point, it's just a **concept**. You and whoever else is interested iterate
+   on it like this for a while.
 
 2. If the concept comes together and seems like a workable idea, you write up a
    proposal. You **file the DEP** to bring it to the committee's attention.
@@ -116,10 +117,10 @@ The workflow goes something like this:
        revision** from you.
 
     2. We **accept** it. We think the DEP is in great shape, and would be
-       an improvement to the platform. Once you have submitted Ecma TC52's 
-       [external contributer form][], we hand the DEP off to TC52 to 
-       take it from there. Your proposal has exited the DEP process and it's 
-       now up to TC52 to handle it. 
+       an improvement to the platform. Once you have submitted Ecma TC52's
+       [external contributer form][], we hand the DEP off to TC52 to
+       take it from there. Your proposal has exited the DEP process and it's
+       now up to TC52 to handle it.
 
     3. We **decline** it. This means we don't think the proposal is likely
        to become something that will move the platform forward. This sounds
@@ -132,6 +133,7 @@ The workflow goes something like this:
    Multiple cycles of this may occur, though everyone naturally wants to
    minimize it.
 
+[core-dev]: [core-dev]: https://groups.google.com/a/dartlang.org/forum/#!forum/core-dev
 [external contributer form]: http://www.ecma-international.org/memento/TC52%20policy/Contribution%20form%20to%20TC52%20Royalty%20Free%20Task%20Group%20as%20a%20non-member.pdf
 
 There's also the possibility that you'll abandon your proposal. This may
