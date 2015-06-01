@@ -100,14 +100,14 @@ code related to generics ambiguous. By leaving off the `new` or `const` in a
 constructor call, code like this:
 
 ```dart
-@A(B<b,c>d())
+@A(B<b,c>(d))
 ```
 
 Could interpreted in one of two ways:
 
 ```dart
-@A(B<b, c>d())     // Call constructor on generic class B, pass to A.
-@A(B < b, c > d()) // Call constructor on A, passing two arguments.
+@A(B<b, c>(d))     // Call constructor on generic class B with argument d, pass to A.
+@A(B < b, c > (d)) // Call constructor on A, passing two boolean arguments B < b, and c > (d).
 ```
 
 The [generic method proposal][gen] has the same problem. It is a breaking
