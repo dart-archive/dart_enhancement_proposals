@@ -133,7 +133,7 @@ The workflow goes something like this:
    Multiple cycles of this may occur, though everyone naturally wants to
    minimize it.
 
-[core-dev]: [core-dev]: https://groups.google.com/a/dartlang.org/forum/#!forum/core-dev
+[core-dev]: https://groups.google.com/a/dartlang.org/forum/#!forum/core-dev
 [external contributer form]: http://www.ecma-international.org/memento/TC52%20policy/Contribution%20form%20to%20TC52%20Royalty%20Free%20Task%20Group%20as%20a%20non-member.pdf
 
 There's also the possibility that you'll abandon your proposal. This may
