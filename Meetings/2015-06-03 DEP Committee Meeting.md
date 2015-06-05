@@ -68,7 +68,7 @@ Lars and lots of other people feel solving this problem is really important.
 
 ### [Generic methods][generic methods]
 
-[generic methods]:
+[generic methods]: https://github.com/leafpetersen/dep-generic-methods
 
 Gilad is near finishing a draft spec for this. It includes a couple of choice
 points for different ways it could go. The plan is for Gilad to meet with Leaf
