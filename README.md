@@ -110,7 +110,7 @@ The workflow goes something like this:
    proposal. You **file the DEP** to bring it to the committee's attention.
    Your proposal is now a live DEP **awaiting review** from the committee.
 
-    1. Create a repository on GitHub. Give it a title like _dep_<short name of your proposal>_.
+    1. Create a repository on GitHub. Give it a title like `dep_<short name of your proposal>`.
     
     2. Inside your repository, create a filed named _proposal.md_
        with the contents from this [template][deptemplate].
