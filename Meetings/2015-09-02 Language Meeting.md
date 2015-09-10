@@ -205,8 +205,6 @@ class Observable {
 Making the type annotation syntax more clearly isolated in grammar fixes that:
 
 ```dart
-typedef void Callback();
-
 class Observable {
   var observer : () -> void;
 }
