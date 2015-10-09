@@ -185,8 +185,6 @@ impossible to declare a field whose type is a function since it clashes with
 method syntax:
 
 ```dart
-typedef void Callback();
-
 class Observable {
   void observer(); // Oops, looks like an abstract method.
 }
