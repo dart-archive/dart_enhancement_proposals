@@ -110,6 +110,20 @@ The workflow goes something like this:
    proposal. You **file the DEP** to bring it to the committee's attention.
    Your proposal is now a live DEP **awaiting review** from the committee.
 
+    1. Create a repository on GitHub. Give it a title like `dep_<short name of your proposal>`.
+    
+    2. Inside your repository, create a filed named _proposal.md_
+       with the contents from this [template][deptemplate].
+       
+    3. Fill out the template as best as you can.
+    
+    4. Send the link to your proposal to [`core-dev@dartlang.org`][core-dev]
+    
+    5. File an [issue][depissues] requesting feedback.
+       
+[deptemplate]: https://github.com/dart-lang/dart_enhancement_proposals/blob/master/DEP%20Template.md
+[depissues]: https://github.com/dart-lang/dart_enhancement_proposals/issues
+
 3. The committee meets and goes over your proposal in detail. We do one of:
 
     1. We **give feedback**. This means the DEP has merit but needs more
