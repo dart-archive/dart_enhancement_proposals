@@ -18,8 +18,8 @@ unexpected error occurs in a test.
 For the most part, it does that by catching any exception that gets thrown, but
 there is one case it currently can't handle.
 
-The Dart VM handles reports syntax and compile errors lazily, only when the
-method or function containing the error is first called.
+The Dart VM reports syntax and compile errors lazily, only when the method or
+function containing the error is first called.
 
 Here's a Dart program:
 
