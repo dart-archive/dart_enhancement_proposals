@@ -107,6 +107,8 @@ community, usually on the [`core-dev@dartlang.org`][core-dev] list. At this
 point, it's just a concept. You and whoever else is interested iterate on it
 like this for a while.
 
+[core-dev]: https://groups.google.com/a/dartlang.org/forum/#!forum/core-dev
+
 If the concept comes together and seems like a workable idea, you [write up a
 proposal][template]. You **file a tracking issue for the DEP**. Your proposal is
 now a live **draft** DEP and the committee will look at it.

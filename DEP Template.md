@@ -91,6 +91,8 @@ It's not necessary to actually implement your feature in the native Dart VM or d
 * Write some sort of standalone prototype implementation.
 * Write a [transpiler][] that takes Dart code using your feature and translates it to "vanilla" Dart code.
 
+[transpiler]: https://en.wikipedia.org/wiki/Source-to-source_compiler
+
 What matters is that you demonstrate that the feature can feasibly be implemented in a reasonable amount of code with good performance.
 
 ### Tests
