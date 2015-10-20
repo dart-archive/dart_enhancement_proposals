@@ -31,7 +31,7 @@ badFunction() {
 main() {
   print("ok");
 }
-```dart
+```
 
 You might expect this to not run, but it actually prints "ok" and completes just
 fine. The spec deliberately allows this because it improves startup time. The VM
