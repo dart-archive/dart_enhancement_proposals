@@ -9,7 +9,7 @@ Attendees: [Bob][], [Florian][], [Kasper][].
 We're seeing interesting cases where users want to write code that only runs
 during development. *(How the runtime determines that the user is "in
 development" is an interesting secondary question, but we can probably assume it
-roughly means "when checked mode is one".)*
+roughly means "when checked mode is on".)*
 
 Sometimes they use an `assert()` pattern like this:
 
