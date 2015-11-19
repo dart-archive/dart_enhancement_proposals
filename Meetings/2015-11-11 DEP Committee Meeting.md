@@ -1,4 +1,4 @@
-Attendees: [Bob][], [Florian][], [Gilad][], [Kasper][].
+Attendees: [Bob][], [Florian][], [Gilad][].
 
 [bob]: https://github.com/munificent
 [florian]: https://github.com/floitschG
