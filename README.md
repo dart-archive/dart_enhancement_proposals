@@ -144,7 +144,7 @@ You sign the [external contributor form][] if you haven't already and the
 proposal goes to TC52. If they approve the feature, the experimental flag is
 removed and the implementation ships.
 
-[external contributer form]: http://www.ecma-international.org/memento/TC52%20policy/Contribution%20form%20to%20TC52%20Royalty%20Free%20Task%20Group%20as%20a%20non-member.pdf
+[external contributor form]: http://www.ecma-international.org/memento/TC52%20policy/Contribution%20form%20to%20TC52%20Royalty%20Free%20Task%20Group%20as%20a%20non-member.pdf
 
 This is the path an accepted proposal takes, but not every DEP makes it to the
 end.
