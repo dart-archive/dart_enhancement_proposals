@@ -141,8 +141,9 @@ We mark it **accepted**. This means that, as far the DEP committee is concerned,
 this should become an official part of the Dart platform.
 
 You sign the [external contributor form][] if you haven't already and the
-proposal goes to TC52. If they approve the feature, the experimental flag is
-removed and the implementation ships.
+proposal goes to TC52. Please note that TC52 operates under a royalty-free 
+patent policy, [RFPP][] (PDF). If TC52 approves the feature, the experimental 
+flag is removed and the implementation ships.
 
 [external contributor form]: http://www.ecma-international.org/memento/TC52%20policy/Contribution%20form%20to%20TC52%20Royalty%20Free%20Task%20Group%20as%20a%20non-member.pdf
 
@@ -198,4 +199,5 @@ Currently, the DEP committee is:
 [gilad]: https://github.com/gbracha
 [florian]: https://github.com/floitschG
 [kasper]: https://github.com/kasperl
+[rfpp]: http://www.ecma-international.org/memento/TC52%20policy/Ecma%20Experimental%20TC52%20Royalty-Free%20Patent%20Policy.pdf
 
