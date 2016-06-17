@@ -101,10 +101,6 @@ Write tests that could be run under an implementation to determine if it impleme
 
 Imagine an adversary is going to write a malicious implementation of your proposal that passes its tests but otherwise does things so horrible it will cause the language team to run screaming from your proposal. Don't let the adversary win.
 
-## Patents rights
-
-TC52, the Ecma technical committee working on evolving the open [Dart standard][], operates under a royalty-free patent policy, [RFPP][] (PDF). This means if the proposal graduates to being sent to TC52, you will have to sign the Ecma TC52 [external contributer form][] and submit it to Ecma.
-
 [tex]: http://www.latex-project.org/
 [language spec]: https://www.dartlang.org/docs/spec/
 [dart standard]: http://www.ecma-international.org/publications/standards/Ecma-408.htm
