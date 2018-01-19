@@ -1,3 +1,8 @@
+## DEPRECATED
+
+**While we are still very much actively evolving the language, we are no longer 
+using the DEP process for managing these changes.** 
+
 This repository maintains and tracks **Dart Enhancement Proposals**. These
 guide the evolution of the [Dart][] programming language. It's similar to
 [Python's PEPs][pep] process and [Scala's SIPs][sip].
